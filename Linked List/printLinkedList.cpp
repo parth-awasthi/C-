@@ -24,9 +24,9 @@ Node *takeInput(){
         else {
             Node *temp= head;
             while(temp -> next != NULL){
-                temp -> next = temp;
+                temp = temp -> next;
             }
-            temp = temp -> next;
+            temp -> next = newNode;
         }
         cin>> data;
     }
