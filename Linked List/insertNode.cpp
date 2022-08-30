@@ -102,7 +102,7 @@ int main()
     int choice;
     cout << "Enter 1 for inserting element in the Linked List: " << endl;
     cout << "Enter 2 for deleting element in the Linked List : " << endl;
-    cin>> choice;
+    cin >> choice;
     switch (choice)
     {
     case 1:
@@ -115,11 +115,11 @@ int main()
     case 2:
         int idx1;
         cout << "Enter index to delete an element :" << endl;
-        cin>> idx1;
+        cin >> idx1;
         head = deleteNode(head, idx1);
         printNode(head);
         break;
     default:
-    cout<<"You have entered invalid option: "<<endl;
+        cout << "You have entered invalid option: " << endl;
     }
 }
